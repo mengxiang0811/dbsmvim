@@ -32,7 +32,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'Shougo/neocomplcache.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'luochen1990/rainbow'
 Plugin 'tpope/vim-rsi'
@@ -490,15 +489,6 @@ nnoremap <Leader>x <C-W>\|<C-W>_
 " <Leader>0 to <Leader>9 is reserved for other usages:)
 nnoremap <Leader>0 :echomsg expand('%:p')<CR>
 nnoremap <Leader>9 :RainbowToggle<CR>
-
-" To enable YouCompleteMe
-" 1) Comment let g:loaded_youcompleteme = 1
-" 2) Uncomment let g:jedi#completions_enabled = 0
-" 3) Uncomment g:neocomplcache_enable_at_startup = 0
-
-let g:loaded_youcompleteme = 1
-" let g:jedi#completions_enabled = 0
-" let g:neocomplcache_enable_at_startup = 0
 
 " guifont settings
 if has("win32")
