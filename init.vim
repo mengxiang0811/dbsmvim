@@ -110,13 +110,8 @@ filetype plugin indent on    " required
 
 " Below is customized settings
 let mapleader = ","
-inoremap jk <Esc>
 nnoremap j gj
 nnoremap k gk
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 
@@ -501,36 +496,9 @@ nnoremap <Leader>9 :RainbowToggle<CR>
 " 2) Uncomment let g:jedi#completions_enabled = 0
 " 3) Uncomment g:neocomplcache_enable_at_startup = 0
 
-" let g:loaded_youcompleteme = 1
-let g:jedi#completions_enabled = 0
-let g:neocomplcache_enable_at_startup = 0
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                               Eclim Settings                               "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-" Eclim with YouCompleteMe
-let g:EclimCompletionMethod = 'omnifunc'
-
-" Eclim with neocomplcache
-" let g:EclimCompletionMethod = 'omnifunc'
-
-" if !exists('g:neocomplcache_force_omni_patterns')
-"   let g:neocomplcache_force_omni_patterns = {}
-" endif
-" let g:neocomplcache_force_omni_patterns.java = '\k\.\k*'
-
-" Eclim java settings
-autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
-autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
-autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
-autocmd FileType java setlocal completeopt-=preview
-
-" Eclim python settings
-autocmd FileType python nnoremap <silent> <buffer> <cr> :PythonSearchContext<cr>
-" autocmd FileType python nnoremap <silent> <buffer> <cr> :DjangoContextOpen<cr>
+let g:loaded_youcompleteme = 1
+" let g:jedi#completions_enabled = 0
+" let g:neocomplcache_enable_at_startup = 0
 
 " guifont settings
 if has("win32")
